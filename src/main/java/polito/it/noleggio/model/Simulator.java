@@ -21,7 +21,7 @@ public class Simulator {
 	// Stato del sistema
 	private int nAuto ; // auto attualmente presenti
 	
-	// Misure in uscita
+	// Misure in uscita 
 	private int nClienti ;
 	private int nClientiInsoddisfatti ;
 	
@@ -70,9 +70,9 @@ public class Simulator {
 				this.nAuto-- ;
 				
 				double num = Math.random()*3 ; // [0, 3)
-//				int num = (int)(Math.random()*3)+1 ;
+//				int num = (int)(Math.random()*3)+1 ; 
 				
-				if (num<1.0) {
+				if (num<1.0) { 
 					this.queue.add(
 							new Event(
 									e.getTime().plus(Duration.of(1, ChronoUnit.HOURS)),
@@ -87,7 +87,7 @@ public class Simulator {
 							EventType.RITORNO_AUTO)) ;
 					
 				}
-				
+				 
 				
 			} else {
 				// insoddisfatto

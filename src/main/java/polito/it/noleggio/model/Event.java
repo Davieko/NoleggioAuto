@@ -14,6 +14,8 @@ public class Event implements Comparable<Event>{
 	
 	@Override
 	public int compareTo(Event other) {
+		// il confronto temporale tra due oggetti di tipo evento 
+		//coincide con il confronto temporale dell'attributo time in ciascuno di essi, il primo è quello che ha tempo più basso
 		return this.time.compareTo(other.time) ;
 	}
 
